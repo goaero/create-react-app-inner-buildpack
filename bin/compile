@@ -58,7 +58,7 @@ cp "$BP_DIR/.profile.d/inject_react_app_env.sh" "$profile_d_dir/"
 #   * https://docs.npmjs.com/private-modules/ci-server-config
 # * `HEROKU_*`, especially for Dyno Metadata
 #   * https://devcenter.heroku.com/articles/dyno-metadata
-export_env_dir "$ENV_DIR" '^(REACT_APP_|NODE_|NPM_|HEROKU_)'
+export_env_dir "$ENV_DIR" '^(REACT_APP_|NODE_|NPM_|HEROKU_|GATSBY_)'
 
 # Build the javascript bundle
 npm run build
